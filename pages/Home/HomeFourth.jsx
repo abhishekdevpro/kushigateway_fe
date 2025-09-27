@@ -21,7 +21,7 @@ const cards = [
       progressBarValue: "135",
       percentage: 45,
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
+        "To create a world where everyone, regardless of their past, has the chance to thrive and succeed."
     },
     {
       id: 2,
@@ -31,27 +31,17 @@ const cards = [
       progressBarValue: "135",
       percentage: 75,
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
+        "Transforming lives by providing support, education, and opportunities for prison inmates and their families."
     },
     {
       id: 3,
       icon: cardIcon1, // replace with actual icon
-      title: "Our Journey",
-      color: "gray",
+      title: "Our Values",
+      color: "orange",
       progressBarValue: "135",
       percentage: 45,
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
-    },
-    {
-      id: 4,
-      icon: cardIcon2, // replace with actual icon
-      title: "Our Principles",
-      color: "pink",
-      progressBarValue: "135",
-      percentage: 75,
-      description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
+        "Promoting dignity, empathy, and empowerment in every life we touch."
     }
   ];
 
@@ -63,19 +53,19 @@ export default function HomeFourth() {
       {/* Top Content */}
       <div className="flex flex-col items-center">
         <p className="font-semibold text-[#DA4628] tracking-wide mb-3 flex justify-center items-center">
-            <Image src={line} alt="horizontal-line" className="h-1 w-16"/>
+            <Image src={line} alt="horizontal-line" className="h-1 w-10 md:w-16"/>
             &nbsp;
             CHANGE EVERYTHING
             &nbsp;
-            <Image src={line} alt="horizontal-line" className="h-1 w-16"/>
+            <Image src={line} alt="horizontal-line" className="h-1 w-10 md:w-16"/>
           </p>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-sans">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-sans text-center">
             We’re Here to Transform Lives and Create Second Chances
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
         {/* Left Content */}
-            <div className="ml-14 mt-8">
+            <div className="md:ml-14 mt-8 ">
                 <Image
                 src={sec4img} // Replace with your image path
                 alt="section 4 Image"
@@ -86,8 +76,8 @@ export default function HomeFourth() {
             </div>
 
             {/* Right Content */}
-            <div className="flex flex-col justify-between w-inherit h-[570px]">
-                <p className="text-gray-600 max-w-lg my-20 font-serif w-[500px]">
+            <div className="flex flex-col justify-between w-inherit md:h-[570px]">
+                <p className="text-gray-600 max-w-lg mb-8 md:my-20 font-serif md:w-[500px] text-center md:text-left">
                 Kushi Gateway is dedicated to changing the odds for prison inmates and their families. 
                 We provide housing, education, support, advice, and advocacy. Our passion drives us to 
                 make a difference and never give up.
@@ -101,6 +91,16 @@ export default function HomeFourth() {
                     nextEl: nextRef.current,
                 }}
                 loop={true}
+                breakpoints={{
+                // when window width is >= 0px
+                0: {
+                  slidesPerView: 1,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 2,
+                },
+              }}
                 // onInit={(swiper) => {
                 // // Attach custom refs to swiper navigation
                 // swiper.params.navigation.prevEl = prevRef.current;
@@ -113,7 +113,7 @@ export default function HomeFourth() {
                 {cards.map((card) => (
                     <SwiperSlide key={card.id}>
                     <div
-                        className={`flex flex-col justify-start gap-2 rounded-2xl border-shadow p-4 w-auto`}
+                        className={`flex flex-col justify-around gap-2 rounded-2xl border-shadow p-4 h-[300px]`}
                         style={{ backgroundColor: card.color }}
                     >
                         {/* Icon */}
@@ -128,7 +128,8 @@ export default function HomeFourth() {
                         <h3 className="font-bold text-xl font-serif">{card.title}</h3>
                         <p>{card.description}</p>
 
-                        <span>
+                        <div>
+                            <span>
                         {card.progressBarValue} {card.title.slice(4)} / {card.percentage}
                         </span>
 
@@ -138,31 +139,34 @@ export default function HomeFourth() {
                             style={{ width: `${card.percentage}%` }}
                         />
                         </div>
+                        </div>            
                     </div>
                     </SwiperSlide>
                 ))}
                 <div
           ref={prevRef}
-          className="absolute left-2 top-1/2 -translate-y-1/2 z-20 cursor-pointer"
+          className="absolute md:left-2 top-1/2 -translate-y-1/2 z-20 cursor-pointer"
         >
           <Image
             src={leftArrow}
             alt="Prev"
             width={60}
             height={60}
+            className="md:w-fit"
           />
         </div>
 
         {/* Custom Next Button */}
         <div
           ref={nextRef}
-          className="absolute right-2 top-1/2 -translate-y-1/2 z-20 cursor-pointer"
+          className="absolute right-1 md:right-2 top-1/2 -translate-y-1/2 z-20 cursor-pointer"
         >
           <Image
             src={rightArrow}
             alt="Next"
             width={60}
             height={60}
+            className="md:w-fit"
           />
         </div>
                 </Swiper>

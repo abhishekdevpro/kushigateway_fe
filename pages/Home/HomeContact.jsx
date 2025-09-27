@@ -15,7 +15,7 @@ export default function ContactSection() {
                       &nbsp;
                       CONTACT US
             </p>
-            <div className="ml-14">
+            <div className="md:ml-14">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Send Us A Message
           </h2>

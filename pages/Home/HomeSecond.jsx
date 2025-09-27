@@ -11,17 +11,17 @@ import line from "../../public/Assets/line.png";
 
 export default function HomeSecond() {
   return (
-    <section className="w-full bg-white px-6 md:px-16 lg:px-14 py-16">
+    <section className="w-full bg-white px-6 md:px-16 lg:px-14 pt-16 pb-10">
       {/* Top Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
           <p className="text-sm font-semibold text-[#DA4628] tracking-wide mb-3 flex items-center">
-            <Image src={line} alt="horizontal-line" className="h-1 w-12"/>
+            <Image src={line} alt="horizontal-line" className="h-1 w-0 md:w-12"/>
             &nbsp;
             WELCOME TO KUSHI GATEWAY,
           </p>
-          <div className="ml-14">
+          <div className="md:ml-14">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
             Transforming lives with <br /> second chances and <br /> teamwork.
           </h1>
@@ -48,9 +48,9 @@ export default function HomeSecond() {
             width={500}
             height={400}
             className="rounded-2xl object-cover"
-          />
+          />        
           <div className="absolute inset-0 flex items-center justify-center">
-            <button className="bg-white rounded-full p-4 mr-20 shadow-md hover:scale-105 transition">
+            <button className="bg-white rounded-full p-4 md:mr-20 shadow-md hover:scale-105 transition">
               <Image src={playButton} alt="play-button" className="w-12 h-12 object-cover"/>
             </button>
           </div>
@@ -59,40 +59,40 @@ export default function HomeSecond() {
 
       {/* Supporters Section */}
       <div className="mt-16">
-        <h2 className="text-sm font-semibold text-gray-700 mb-6 flex items-center">
-          <span className="w-1/7 pr-0">OUR SUPPORTERS</span>
-           <hr className="w-full opacity-30"/>
+        <h2 className="text-sm font-semibold text-gray-700 flex items-center mb-6">
+          <span className="md:w-1/7 pr-0">OUR SUPPORTERS</span>
+           <hr className="md:w-full opacity-30"/>
         </h2>
-        <div className="flex flex-wrap justify-between items-center gap-6">
+        <div className="flex flex-wrap justify-center md:ustify-between items-center gap-4">
           <Image
             src={supporter1} // supporter logo
             alt="Freevance Logo"
-            width={120}
-            height={40}
+            width={170}
+            height={60}
           />
           <Image
             src={supporter2}
             alt="Kushi Gateway Logo"
-            width={120}
-            height={40}
+            width={170}
+            height={60}
           />
           <Image
             src={supporter3}
             alt="Nova Home Care Logo"
-            width={120}
-            height={40}
+            width={170}
+            height={60}
           />
           <Image
             src={supporter4}
             alt="Ultra Aura Logo"
-            width={120}
-            height={40}
+            width={170}
+            height={60}
           />
           <Image
             src={supporter5}
             alt="Nova Jobs Logo"
-            width={120}
-            height={40}
+            width={170}
+            height={80}
           />
         </div>
       </div>

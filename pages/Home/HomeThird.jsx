@@ -17,14 +17,14 @@ const features = [
       icon: icon1, // replace with actual icon
       title: "Every action transforms lives.",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        "Small, thoughtful actions can create powerful ripple effects. Each step we take brings lasting change and builds a foundation of hope for those in need.",
     },
     {
       id: 2,
       icon: icon2, // replace with actual icon
       title: "We make a positive impact, step by step.",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        "With compassion and dedication, we move forward one challenge at a time. Our community stands together, making progress and celebrating every victory—no matter how small.",
     },
   ];
 
@@ -32,15 +32,15 @@ export default function HomeThird() {
   return (
     <section className="w-full bg-[#DA46281A] px-6 md:px-16 lg:px-14 py-16">
       {/* Top Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-30 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-30 items-start">
         {/* Left Content */}
         <div>
           <p className="text-sm font-semibold text-[#DA4628] tracking-wide mb-3 flex items-center">
-            <Image src={line} alt="horizontal-line" className="h-1 w-12"/>
+            <Image src={line} alt="horizontal-line" className="h-1 w-0 md:w-12"/>
             &nbsp;
             TRANSFORMING LIVES WITH EVERY STEP
           </p>
-          <div className="ml-14">
+          <div className="ml-0 md:ml-14 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
             Support Services for a <br/>Brighter Future
           </h1>
@@ -50,13 +50,13 @@ export default function HomeThird() {
             business reinvention opportunities, and mental health support, ensuring that every journey with us is unique 
             and impactful.
           </p>
-          <p className="text-gray-600 mb-6 max-w-lg">
+          <p className="text-gray-600 mb-10 md:mb-6 max-w-lg">
             Whether you're seeking personal growth, career advancement, or a fresh start for your business, 
             Kushi Gateway is here to help you overcome limitations and unlock your full potential. Empowered by 
             Hyper V Solutions, an AI-driven business incubator at the University of South Carolina, we leverage 
             cutting-edge technology and innovative strategies to make our support effective, efficient, and sustainable.
           </p>
-        <div className="max-w-4xl space-y-8 w-[450px] mx-14">
+        <div className="max-w-4xl space-y-8 md:w-[450px] md:mx-8">
         {features.map((feature) => (
           <div key={feature.id} className="flex items-start gap-4">
             {/* Icon */}
@@ -71,8 +71,8 @@ export default function HomeThird() {
             </div>
 
             {/* Text Content */}
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+            <div className="text-left">
+              <h3 className="text-lg font-semibold text-gray-900 md:mb-1">
                 {feature.title}
               </h3>
               <p className="text-gray-600 text-sm">{feature.description}</p>
@@ -84,7 +84,7 @@ export default function HomeThird() {
         </div>
 
         {/* Right Content (Video Placeholder) */}
-        <div className="relative">
+        <div className="relative ">
           <Image
             src={childImage} // Replace with your image path
             alt="section 3 Image"
