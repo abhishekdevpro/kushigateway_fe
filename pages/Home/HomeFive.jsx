@@ -20,7 +20,7 @@ const cards = [
       progressBarValue: "135",
       percentage: 45,
       description:
-        "At Kushi Gateway, we believe in second chances, fresh beginnings, and the limitless potential of individuals and businesses."
+        "Provides job assessments and coaching to match offenders with suitable roles."
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const cards = [
       progressBarValue: "135",
       percentage: 75,
       description:
-        "At Kushi Gateway, we believe in second chances, fresh beginnings, and the limitless potential of individuals and businesses."
+        "Partners with companies to operate in prisons, managing inmate rehabilitation."
     },
     {
       id: 3,
@@ -40,17 +40,17 @@ const cards = [
       progressBarValue: "135",
       percentage: 45,
       description:
-        "At Kushi Gateway, we believe in second chances, fresh beginnings, and the limitless potential of individuals and businesses."
+        "Delivers training aligned with industry standards to enhance job readiness."
     },
     {
       id: 4,
       icon: cardImg3, // replace with actual icon
-      title: "Work Programmer",
+      title: "Work Programme",
       color: "pink",
       progressBarValue: "135",
       percentage: 75,
       description:
-        "At Kushi Gateway, we believe in second chances, fresh beginnings, and the limitless potential of individuals and businesses."
+        "Runs prison-based work programs to build work ethics and skills."
     }
   ];
 
@@ -65,13 +65,13 @@ export default function HomeFive() {
             &nbsp;
             <Image src={line} alt="horizontal-line" className="h-1 w-16"/>
           </p>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 my-4 font-sans">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 my-4 font-sans ml-6 md:ml-0">
             Partnerships and Programmes
         </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-[1170px] text-white my-12 place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:w-[1170px] text-white my-12 place-items-center">
                 {cards.map((card) => (
                     <div
-                        className="flex rounded-2xl p-4 px-8 w-[570px] h-[150px] bg-[#DA4628] flex items-center"
+                        className="flex rounded-2xl p-4 md:px-8 md:w-[570px] h-[150px] bg-[#DA4628] flex items-center"
                     >
                         <div className="flex items-start gap-3">
                             <Image
@@ -81,18 +81,18 @@ export default function HomeFive() {
                         height={40}
                         className="w-14 h-14 mt-1"
                         />
-                            <div>
+                            <div className="mr-3">
                                 <h3 className="font-bold text-xl font-sans">{card.title}</h3>
                                 <p className="text-sm">{card.description}</p>
                             </div>
                         </div>
                         <Link href="#">
-                            <Image src={arrowBtn} className="rounded-full w-18 h-12"/>
+                            <Image src={arrowBtn} className="rounded-full w-12 h-10 md:h-12"/>
                         </Link>                                                       
                     </div>
                 ))}
             </div>
-         <div className="bg-[#DA4628] rounded-2xl flex flex-col items-center text-white px-20 pt-10">
+         <div className="bg-[#DA4628] rounded-2xl flex flex-col items-center text-white px-5 md:px-20 pt-10">
             <h3 className="font-bold my-8 font-sans text-3xl">LET'S HELP THEM</h3>
             <div className="flex items-start gap-4">
                 <Image src={leftQuote} alt="left-quot" className="w-fit h-6"/>
