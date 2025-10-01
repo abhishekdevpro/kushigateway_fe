@@ -7,15 +7,20 @@ import HomeFourth from "./HomeFourth";
 import HomeFive from "./HomeFive";
 import ContactSection from "./HomeContact";
 import Footer from "./HomeFooter";
+import HomeMobileFirst from "./HomeMobileFirst";
+import ServicePathways from "./ServicePathwaysSection";
+import GetInvolved from "./GetInvolvedSection";
 
 export default function Homepage() {
   return (
     <div>
-      <meta name="viewport" content="width=device-width" data-next-head=""></meta>
       <Navbar />
       <HomeFirst/>
+      <HomeMobileFirst/>
       <HomeSecond/>
       <HomeThird/>
+      <ServicePathways/>
+      <GetInvolved/>
       <HomeFourth/>
       <HomeFive/>
       <ContactSection/>

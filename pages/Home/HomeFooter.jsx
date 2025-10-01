@@ -39,7 +39,42 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="hidden md:block">
+          <h3 className="text-lg font-semibold mb-4">Quick links</h3>
+          <ul className="space-y-2 text-gray-400">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">Join With Us</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        {/* Address */}
+        <div className="hidden md:block">
+          <h3 className="text-lg font-semibold mb-4">Address</h3>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            1509 Lady St, <br />
+            Columbia SC, 29201, <br />
+            United States.
+          </p>
+        </div>
+
+        {/* Contact */}
+        <div className="hidden md:block">
+          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+          <ul className="space-y-4 text-gray-400 text-sm">
+            <li><a href="mailto: info@kushigateway.com">info@kushigateway.com</a></li>
+            <li>
+                <button className="cursor-pointer bg-[#DA4628] hover:bg-red-600 text-white px-4 py-2 rounded transition-all duration-300 text-sm font-bold">
+                  <a href="https://calendly.com/hypervsolutions/" target="_blank" rel="noreferer">Book Free Consultation</a>                  
+                </button>
+            </li>            
+          </ul>
+        </div>
+        {/* Below is for mobile device */}
+        <div className="md:hidden flex flex-wrap justify-between">
+          <div>
           <h3 className="text-lg font-semibold mb-4">Quick links</h3>
           <ul className="space-y-2 text-gray-400">
             <li><a href="#">About Us</a></li>
@@ -61,7 +96,7 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div>
+        <div className="mt-8">
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <ul className="space-y-4 text-gray-400 text-sm">
             <li><a href="mailto: info@kushigateway.com">info@kushigateway.com</a></li>
@@ -72,21 +107,72 @@ export default function Footer() {
             </li>            
           </ul>
         </div>
+        </div>
       </div>
 
       {/* Cloud Pattern */}
-      <div className="w-full">
-        <Image
-          src={cloudPattern} // <-- replace with footer background pattern
-          alt="Cloud Pattern"
-          width={1920}
-          height={200}
-          className="w-full"
-        />
-      </div>
+     <footer className="relative h-64 overflow-hidden">
+  {/* Animated Waves */}
+  <svg
+    className="absolute bottom-0 w-full h-full"
+    viewBox="0 0 1440 320"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+  >
+    {/* Wave 1 */}
+    <path
+      fill="#DA4628"
+      fillOpacity="0.6"
+      d="M0,160 C240,240 480,80 720,160 C960,240 1200,80 1440,160 C1680,240 1920,80 2160,160 L2160,320 L0,320 Z"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0 0"
+        to="-720 0"
+        dur="20s"
+        repeatCount="indefinite"
+      />
+    </path>
+
+    {/* Wave 2 */}
+    <path
+      fill="#FF5A3C"
+      fillOpacity="0.5"
+      d="M0,180 C240,260 480,100 720,180 C960,260 1200,100 1440,180 C1680,260 1920,100 2160,180 L2160,320 L0,320 Z"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0 0"
+        to="-720 0"
+        dur="25s"
+        repeatCount="indefinite"
+      />
+    </path>
+
+    {/* Wave 3 */}
+    <path
+      fill="#FF3C1A"
+      fillOpacity="0.4"
+      d="M0,200 C240,280 480,120 720,200 C960,280 1200,120 1440,200 C1680,280 1920,120 2160,200 L2160,320 L0,320 Z"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0 0"
+        to="-720 0"
+        dur="30s"
+        repeatCount="indefinite"
+      />
+    </path>
+  </svg>
+</footer>
+
+
 
       {/* Bottom Footer */}
-      <div className="bg-[#E9593C] text-white flex flex-col md:flex-row items-center justify-between px-6 lg:px-20 py-4">
+      <div className="bg-[#DA4628] text-white flex flex-col md:flex-row items-center justify-between px-6 lg:px-20 py-4">
         <p className="text-sm">
           © 2025 kushigateway.in All Rights Reserved
         </p>

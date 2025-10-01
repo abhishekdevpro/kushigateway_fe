@@ -28,29 +28,34 @@ const features = [
     },
   ];
 
+const hoverEffect = "transition-all duration-300 transform hover:scale-105";
+
 export default function HomeThird() {
   return (
-    <section className="w-full bg-[#DA46281A] px-6 md:px-16 lg:px-14 py-16">
+    <section className="w-full bg-[#DA46281A] px-4 md:px-8 py-4 py-16">
       {/* Top Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-30 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-start md:flex md:justify-between">
         {/* Left Content */}
         <div>
-          <p className="text-sm font-semibold text-[#DA4628] tracking-wide mb-3 flex items-center">
-            <Image src={line} alt="horizontal-line" className="h-1 w-0 md:w-12"/>
+          <p className="text-[12px] md:text-md font-semibold text-[#DA4628] tracking-widest mb-3 flex md:items-center">
+            <Image src={line} alt="horizontal-line" className="h-1 w-0 md:w-15"/>
             &nbsp;
             TRANSFORMING LIVES WITH EVERY STEP
           </p>
-          <div className="ml-0 md:ml-14 text-center md:text-left">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
+          <div className="ml-4 md:ml-17 text-left">
+          <h1 className="hidden md:block text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
             Support Services for a <br/>Brighter Future
           </h1>
-          <p className="text-gray-600 mb-6 max-w-lg">
+          <h1 className="md:hidden text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
+            Support Services for A Brighter Future
+          </h1>
+          <p className="text-gray-600 mb-6 max-w-xl">
             Our mission is to provide a lifeline to individuals who feel stuck and businesses 
             encountering unforeseen obstacles. We specialize in creating tailored solutions through retraining programs, 
             business reinvention opportunities, and mental health support, ensuring that every journey with us is unique 
             and impactful.
           </p>
-          <p className="text-gray-600 mb-10 md:mb-6 max-w-lg">
+          <p className="text-gray-600 mb-10 md:mb-6 max-w-xl">
             Whether you're seeking personal growth, career advancement, or a fresh start for your business, 
             Kushi Gateway is here to help you overcome limitations and unlock your full potential. Empowered by 
             Hyper V Solutions, an AI-driven business incubator at the University of South Carolina, we leverage 
@@ -84,13 +89,13 @@ export default function HomeThird() {
         </div>
 
         {/* Right Content (Video Placeholder) */}
-        <div className="relative ">
+        <div className="relative place-items-center md:ml-8 mt-6 md:mt-0">
           <Image
             src={childImage} // Replace with your image path
             alt="section 3 Image"
             width={500}
-            height={400}
-            className="rounded-2xl object-cover"
+            height={500}
+            className={`rounded-2xl ${hoverEffect}`}
           />    
         </div>
       </div>
