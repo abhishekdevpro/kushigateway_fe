@@ -6,20 +6,22 @@ import line from "../../public/Assets/line.png";
 
 export default function ContactSection() {
   return (
-    <section className="w-full bg-white py-16 px-6 lg:px-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <section className="w-full bg-[#F4F4F4] py-16 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 md:flex md:justify-between">
         {/* Left Content */}
-        <div className="flex flex-col items-start">
-            <p className="font-semibold text-[#DA4628] tracking-wide mb-5 flex items-center">
+        <div className="flex flex-col items-start justify-between">
+            <p className="font-semibold text-[#DA4628] tracking-wide flex items-center">
                       <Image src={line} alt="horizontal-line" className="h-1 w-16 mb-1"/>
                       &nbsp;
                       CONTACT US
             </p>
-            <div className="md:ml-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="md:ml-17">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 font-sans mt-6 md:mt-0">
             Send Us A Message
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-8">
+          </div>
+          <div className="md:ml-17">
+          <p className="text-gray-600 leading-relaxed mb-8 max-w-xl">
             At Kushi Gateway, we believe in second chances, fresh beginnings,
             and the limitless potential of individuals and businesses. As a
             transformative 501(c)(3) nonprofit organization, we are dedicated to
@@ -27,9 +29,10 @@ export default function ContactSection() {
             challenges, offering guidance, resources, and opportunities—at no
             cost.
           </p>
-
+          </div>
+          <div className="md:ml-17">
           {/* Form */}
-          <div className="bg-neutral-900 text-white p-6 rounded-md shadow-md ">
+          <div className="bg-neutral-900 text-white p-6 rounded-md shadow-md">
             <form className="space-y-4 px-2 py-3">
               <input
                 type="text"
@@ -72,7 +75,7 @@ export default function ContactSection() {
         {/* Right Side Image */}
         <div className="flex justify-center">
           {/* Replace with your image */}
-          <div className="w-full max-w-md rounded-md overflow-hidden shadow-lg">
+          <div className="w-full max-w-3xl rounded-md overflow-hidden shadow-lg">
             <Image
               src={doorImage} // <-- replace with your own image path
               alt="Open Door"

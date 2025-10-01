@@ -3,17 +3,18 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import Image from "next/image";
 import Kushi_logo from "../../public/Assets/Kushi_logo.png";
+import locationIcon from "../../public/Assets/white_location_icon.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const hoverEffect = "transition-all duration-300 transform hover:scale-105 hover:bg-red-600";
   return (
     <header>
       {/* Top bar */}
-      <div className="bg-[#DA4628] text-white text-sm flex justify-between px-4 md:px-6 py-2">
-        <div className="hidden md:block">
+      <div className="hidden md:flex bg-[#DA4628] text-white flex justify-between text-sm px-6 py-2">
+        <div className="hidden md:flex md:justify-between">
           <span className="mr-6">info@kushigateway.com</span>
-          <span>📍 1509 Lady St, Columbia SC, 29201</span>
+          <span className="flex"><Image src={locationIcon} alt="location-svg" className="w-5"/> 1509 Lady St, Columbia SC, 29201, United States</span>
         </div>
         <div className="flex gap-5 md:gap-7">
           <FaFacebookF />
@@ -27,7 +28,7 @@ export default function Navbar() {
       <div className="bg-white shadow flex justify-between items-center px-4 md:px-8 py-4">
         {/* Logo */}
         <div className="flex items-center gap-3 w-1/3">
-          <Image src={Kushi_logo} alt="Logo" className="h-12 w-auto" />
+          <Image src={Kushi_logo} alt="Logo" className="h-8 md:h-12 w-auto" />
         </div>
 
         {/* Desktop nav */}
@@ -47,12 +48,12 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop CTA */}
-        <button className="hidden md:block bg-[#DA4628] text-white px-5 py-3 rounded-full">
+        <button className={`hidden md:block bg-[#DA4628] text-white px-5 py-3 rounded-full ${hoverEffect}`}>
           Contact Us →
         </button>
 
         {/* Mobile menu button */}
-        <div className="md:hidden">
+        <div className="md:hidden mx-3">
           {menuOpen ? (
             <HiOutlineX
               className="w-7 h-7 cursor-pointer"
@@ -70,13 +71,13 @@ export default function Navbar() {
       {/* Mobile menu dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-gray-50 px-4 py-3 space-y-3 shadow-inner">
-          <nav className="flex flex-wrap items-center gap-2 text-sm font-medium">
+          <nav className="flex flex-col items-center gap-2 text-sm font-medium">
             <a href="#" className="text-[#DA4628]">Home</a>
-            <span className="text-gray-400">/</span>
+            <span className="text-gray-400"></span>
             <a href="#" className="hover:text-[#DA4628]">About Us</a>
-            <span className="text-gray-400">/</span>
+            <span className="text-gray-400"></span>
             <a href="#" className="hover:text-[#DA4628]">Partnership & Programmes</a>
-            <span className="text-gray-400">/</span>
+            <span className="text-gray-400"></span>
             <a href="#" className="hover:text-[#DA4628]">What We Do</a>
           </nav>
           <button className="bg-[#DA4628] text-white px-4 py-2 rounded-full w-full">
