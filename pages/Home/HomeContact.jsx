@@ -10,7 +10,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 md:flex md:justify-between">
         {/* Left Content */}
         <div className="flex flex-col items-start justify-between">
-            <p className="font-semibold text-[#DA4628] tracking-wide flex items-center">
+            <p className="font-semibold text-[#F4A261] tracking-wide flex items-center">
                       <Image src={line} alt="horizontal-line" className="h-1 w-16 mb-1"/>
                       &nbsp;
                       CONTACT US
@@ -32,7 +32,7 @@ export default function ContactSection() {
           </div>
           <div className="md:ml-17">
           {/* Form */}
-          <div className="bg-neutral-900 text-white p-6 rounded-md shadow-md">
+          <div className="bg-[#0A2647] text-white p-6 rounded-md shadow-md">
             <form className="space-y-4 px-2 py-3">
               <input
                 type="text"
@@ -63,7 +63,7 @@ export default function ContactSection() {
               />
               <button
                 type="submit"
-                className="w-full py-3 bg-[#DA4628] hover:bg-red-700 transition rounded-md font-medium font-sans"
+                className="w-full py-3 bg-[#8138E7] hover:bg-[#5F27B7] transition rounded-md font-medium font-sans"
               >
                 Send A Message
               </button>

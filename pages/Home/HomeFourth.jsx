@@ -17,7 +17,7 @@ const cards = [
       id: 1,
       icon: cardIcon1, // replace with actual icon
       title: "Our Vision",
-      color: "#EBD18D",
+      color: "#F4A261",
       progressBarValue: "135",
       percentage: 45,
       description:
@@ -27,7 +27,7 @@ const cards = [
       id: 2,
       icon: cardIcon2, // replace with actual icon
       title: "Our Mission",
-      color: "#8DD4EB",
+      color: "#14899A",
       progressBarValue: "135",
       percentage: 75,
       description:
@@ -37,7 +37,7 @@ const cards = [
       id: 3,
       icon: cardIcon1, // replace with actual icon
       title: "Our Values",
-      color: "orange",
+      color: "#8138E7",
       progressBarValue: "135",
       percentage: 45,
       description:
@@ -52,7 +52,7 @@ export default function HomeFourth() {
     <section className="w-full bg-[#F4F4F4] px-4 md:px-8 py-4 pt-12 pb-0">
       {/* Top Content */}
       <div className="flex flex-col items-center">
-        <p className="font-semibold text-[#DA4628] tracking-wide mb-3 flex justify-center items-center">
+        <p className="font-semibold text-[#F4A261] tracking-wide mb-3 flex justify-center items-center">
             <Image src={line} alt="horizontal-line" className="h-1 w-10 md:w-16"/>
             &nbsp;
             CHANGE EVERYTHING
@@ -91,13 +91,12 @@ export default function HomeFourth() {
                     nextEl: nextRef.current,
                 }}
                 autoplay={{
-                  delay: 2000, // 3 seconds
+                  delay: 2000, // 2 seconds
                   disableOnInteraction: false,
                 }}
                 breakpoints={{
                   0: { slidesPerView: 1 },       // mobile
-                  640: { slidesPerView: 2 },     // tablet
-                  1024: { slidesPerView: 3 },    // desktop
+                  640: { slidesPerView: 2 },     // greater than mobile
                 }}
                 loop={true}
                 // onInit={(swiper) => {
@@ -112,7 +111,7 @@ export default function HomeFourth() {
                 {cards.map((card) => (
                     <SwiperSlide key={card.id}>
                     <div
-                        className={`flex flex-col justify-around  gap-1 md:gap-2 rounded-2xl border-shadow p-4 h-[200px] md:h-[300px]`}
+                        className={`flex flex-col justify-around text-white font-sans gap-1 md:gap-2 rounded-2xl border-shadow p-4 h-[200px] md:h-[300px]`}
                         style={{ backgroundColor: card.color }}
                     >
                         {/* Icon */}
@@ -121,7 +120,7 @@ export default function HomeFourth() {
                         alt={`cards_image_${card.id}`}
                         width={40}
                         height={40}
-                        className="w-9 h-9"
+                        className="w-9 h-9 md:w-12 md:h-12"
                         />
 
                         <h3 className="font-bold  md:text-xl font-serif">{card.title}</h3>
@@ -132,9 +131,9 @@ export default function HomeFourth() {
                         {card.progressBarValue} {card.title.slice(4)} / {card.percentage}
                         </span>
 
-                        <div className="w-full h-1.5 bg-gray-300 rounded">
+                        <div className="w-full h-1.5 bg-gray-400 rounded">
                         <div
-                            className="md:h-1.5 bg-black rounded"
+                            className="h-1.5 bg-white rounded"
                             style={{ width: `${card.percentage}%` }}
                         />
                         </div>

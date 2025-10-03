@@ -32,12 +32,12 @@ const hoverEffect = "transition-all duration-300 transform hover:scale-105";
 
 export default function HomeThird() {
   return (
-    <section className="w-full bg-[#DA46281A] px-4 md:px-8 py-4 py-16">
+    <section className="w-full bg-[#F4A26126] px-4 md:px-8 py-4 py-16">
       {/* Top Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-start md:flex md:justify-between">
         {/* Left Content */}
         <div>
-          <p className="text-[12px] md:text-md font-semibold text-[#DA4628] tracking-widest mb-3 flex md:items-center">
+          <p className="text-[12px] md:text-md font-semibold text-[#F4A261] tracking-widest mb-3 flex md:items-center">
             <Image src={line} alt="horizontal-line" className="h-1 w-0 md:w-15"/>
             &nbsp;
             TRANSFORMING LIVES WITH EVERY STEP

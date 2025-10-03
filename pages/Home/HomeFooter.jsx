@@ -8,7 +8,7 @@ import cloudPattern from "../../public/Assets/footerRectangle.png"; // <-- repla
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white relative">
+    <footer className="bg-[#0A2647] text-white relative">
       {/* Top Footer Section */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 px-6 lg:px-10 py-12">
         {/* Company Info */}
@@ -32,8 +32,8 @@ export default function Footer() {
             <Image
               src={sbeDbeBadge} // <-- replace with badge image
               alt="SBE & DBE"
-              width={120}
-              height={60}
+              width={180}
+              height={100}
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400 text-sm">
             <li><a href="mailto: info@kushigateway.com">info@kushigateway.com</a></li>
             <li>
-                <button className="cursor-pointer bg-[#DA4628] hover:bg-red-600 text-white px-4 py-2 rounded transition-all duration-300 text-sm font-bold">
+                <button className="cursor-pointer bg-[#14899A] hover:[#0E6370] text-white px-4 py-2 rounded transition-all duration-300 text-sm font-bold">
                   <a href="https://calendly.com/hypervsolutions/" target="_blank" rel="noreferer">Book Free Consultation</a>                  
                 </button>
             </li>            
@@ -101,7 +101,7 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400 text-sm">
             <li><a href="mailto: info@kushigateway.com">info@kushigateway.com</a></li>
             <li>
-                <button className="cursor-pointer bg-[#DA4628] hover:bg-red-600 text-white px-4 py-2 rounded transition-all duration-300 text-sm font-bold">
+                <button className="cursor-pointer bg-[#14899A] hover:[#0E6370] text-white px-4 py-2 rounded transition-all duration-300 text-sm font-bold">
                   <a href="https://calendly.com/hypervsolutions/" target="_blank" rel="noreferer">Book Free Consultation</a>                  
                 </button>
             </li>            
@@ -121,7 +121,7 @@ export default function Footer() {
   >
     {/* Wave 1 */}
     <path
-      fill="#DA4628"
+      fill="#14899A"
       fillOpacity="0.6"
       d="M0,160 C240,240 480,80 720,160 C960,240 1200,80 1440,160 C1680,240 1920,80 2160,160 L2160,320 L0,320 Z"
     >
@@ -137,7 +137,7 @@ export default function Footer() {
 
     {/* Wave 2 */}
     <path
-      fill="#FF5A3C"
+      fill="#14899A"
       fillOpacity="0.5"
       d="M0,180 C240,260 480,100 720,180 C960,260 1200,100 1440,180 C1680,260 1920,100 2160,180 L2160,320 L0,320 Z"
     >
@@ -153,7 +153,7 @@ export default function Footer() {
 
     {/* Wave 3 */}
     <path
-      fill="#FF3C1A"
+      fill="#14899A"
       fillOpacity="0.4"
       d="M0,200 C240,280 480,120 720,200 C960,280 1200,120 1440,200 C1680,280 1920,120 2160,200 L2160,320 L0,320 Z"
     >
@@ -172,7 +172,7 @@ export default function Footer() {
 
 
       {/* Bottom Footer */}
-      <div className="bg-[#DA4628] text-white flex flex-col md:flex-row items-center justify-between px-6 lg:px-20 py-4">
+      <div className="bg-[#14899A] text-white flex flex-col md:flex-row items-center justify-between px-6 lg:px-20 py-4">
         <p className="text-sm">
           © 2025 kushigateway.in All Rights Reserved
         </p>
