@@ -20,7 +20,7 @@ export default function HomeSecond() {
       <div className="grid grid-cols-1 md:flex md:justify-between gap-10 items-center">
         {/* Left Content */}
         <div>
-          <p className="text-md font-semibold text-[#DA4628] tracking-widest mb-6 flex items-center">
+          <p className="text-md font-semibold text-[#F4A261] tracking-widest mb-6 flex items-center">
             <Image src={line} alt="horizontal-line" className="h-1 w-5 md:w-15"/>
             &nbsp;&nbsp;
             WELCOME TO KUSHI GATEWAY,
@@ -40,7 +40,7 @@ export default function HomeSecond() {
             challenges, offering guidance, resources, and opportunities—at no
             cost.
           </p>
-          <button className="bg-[#DA4628] hover:bg-red-600 text-white px-6 py-3 rounded-full inline-flex items-center transition">
+          <button className="bg-[#8138E7] hover:bg-[#5F27B7] text-white px-6 py-3 rounded-full inline-flex items-center transition">
             Learn More →
           </button>
           </div>
