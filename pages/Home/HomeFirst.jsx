@@ -19,18 +19,18 @@ const hoverEffectBtn = "transition-all duration-300 transform hover:scale-105";
 const HomeFirst = () => {
   return (
     // Main container with red background and responsive padding
-    <div className="hidden md:bg-[#14899A] md:flex md:flex-col md:items-around px-8 py-4 font-sans text-white">
+    <div className="hidden md:bg-[#14899A] md:flex md:flex-col md:items-around p-5 font-sans text-white">
       {/* Main title section */}
       <div className="flex flex-col justify-end items-center h-[330px]">
       <h1 className="text-2xl md:text-[68px] font-semibold text-white text-center mt-12 mb-2">
         Transforming Lives with Second <br/> Chances
       </h1>
-      <p className="text-center md:text-[27px] mb-8 md:mb-0 w-fit">At Kushi Gateway, we believe in fresh beginnings and <br/><AnimatedSubtext/></p>
+      <p className="text-center md:text-[27px] mb-8 md:mb-0 w-fit flex">At Kushi Gateway, we believe in &nbsp;<AnimatedSubtext/> </p>
       </div>
       {/* Content grid layout with responsive columns */}
-      <div className="flex justify-between items-end gap-4">
-        <div className="flex flex-col lg:h-[490px] lg:w-[220px]">
-            <div style={{backgroundImage: `url(${banner1.src})`, backgroundSize: 'contain', backgroundRepeat: "no-repeat"}} 
+      <div className="flex justify-around items-end gap-2">
+        <div className="flex flex-col lg:h-[490px] lg:w-auto items-center">
+            <div style={{backgroundImage: `url(${banner1.src})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat"}} 
             className={`text-white w-[220px] h-[380px] flex flex-col ${hoverEffect}`}>
                 <p className="font-bold font-serif text-[10px] md:text-[25px] p-5 mt-2">95% Success Stories</p>
                 <p className="text-[12px] pl-5 p-3">Our programs have successfully reintegrated individuals into society by providing education, 
@@ -42,12 +42,12 @@ const HomeFirst = () => {
                     <Image src={Frame24} className="w-fit rounded-full border-1 border-black" alt="arrow-icon"/>
                 </Link>
             </div>
-            <div className={`mt-4 ${hoverEffect} md:h-[170px] md:w-[220px]`}>
+            <div className={`mt-4 ${hoverEffect} md:h-[170px] md:w-auto`}>
                 <Image src={Frame15} alt="smile-image"/>
             </div>
         </div>
-        <div className={`lg:h-[292px] lg:w-[200px] text-[12px] flex flex-col justify-end items-center p-2 font-serif mb-4 ${hoverEffect}`}
-            style={{backgroundImage: `url(${banner2.src})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}
+        <div className={`lg:h-[320px] lg:w-[220px] text-[12px] flex flex-col justify-end items-center p-2 font-serif mb-4 ${hoverEffect}`}
+            style={{backgroundImage: `url(${banner2.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}
         >
            <p className="font-bold text-[10px] md:text-[25px]">Skill Training & Education</p>
                 <p className="text-[12px] p-2">From digital skills to job readiness, we prepare individuals and families with the 
@@ -70,8 +70,8 @@ const HomeFirst = () => {
                 <Image src={centerArrowIcon} className="w-fit" alt="arrow-icon"/>
             </Link>
         </div>
-        <div className={`lg:h-[292px] lg:w-[200px] text-[12px] flex flex-col justify-end items-start p-2 font-serif mb-4 ${hoverEffect}`}
-            style={{backgroundImage: `url(${banner3.src})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}
+        <div className={`lg:h-[320px] lg:w-[220px] text-[12px] flex flex-col justify-end items-start p-2 font-serif mb-4 ${hoverEffect}`}
+            style={{backgroundImage: `url(${banner3.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}
         >
            <p className="font-bold text-[10px] md:text-[15px] p-2 tracking-[-1px]">Support & Care</p>
                 <p className="text-[12px] pl-2">From digital skills to job readiness, we prepare individuals and families with the 
@@ -83,8 +83,8 @@ const HomeFirst = () => {
                     <Image src={Frame24} className="w-fit rounded-full border-1 border-black" alt="arrow-icon"/>
                 </Link> 
         </div>
-        <div className="flex flex-col lg:h-[490px] lg:w-[220px]">
-            <div style={{backgroundImage: `url(${banner4.src})`, backgroundSize: 'contain', backgroundRepeat: "no-repeat"}} 
+        <div className="flex flex-col lg:h-[490px] lg:w-auto">
+            <div style={{backgroundImage: `url(${banner4.src})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat"}} 
             className={`text-white w-[220px] h-[380px] flex flex-col justify-around ${hoverEffect}`}>
                 <div>
                 <p className="font-bold font-serif text-[10px] md:text-[25px] p-5 pb-2 mt-6">Gallery of Change</p>

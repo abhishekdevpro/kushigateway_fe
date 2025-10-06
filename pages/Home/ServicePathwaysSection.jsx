@@ -63,8 +63,8 @@ export default function ServicePathways() {
             <Image
               src={servicePath1} // replace with actual icon
               alt="Jobs Icon"
-              width={48}
-              height={48}
+              width={52}
+              height={52}
             />
           </div>          
         </div>
@@ -103,8 +103,8 @@ export default function ServicePathways() {
             <Image
               src={servicePath2} // replace with actual icon
               alt="Skills Icon"
-              width={48}
-              height={48}
+              width={52}
+              height={52}
             />
           </div>        
         </div>
@@ -142,8 +142,8 @@ export default function ServicePathways() {
             <Image
               src={servicePath3} // replace with actual icon
               alt="Homecare Icon"
-              width={48}
-              height={48}
+              width={52}
+              height={52}
             />
           </div>        
         </div>

@@ -8,7 +8,7 @@ import line from "../../public/Assets/line.png";
 
 export default function GetInvolved() {
   return (
-    <section className="w-full py-12 bg-[#F4A26126]">
+    <section className="w-full py-12 bg-[#FDF1E7]">
       {/* Section Heading */}
       <div className="flex items-center justify-center mb-4 gap-2">
         <Image src={line} alt="horizontal-line" className="h-1 w-0 md:w-15"/>

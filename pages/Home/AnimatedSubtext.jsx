@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 
 export default function AnimatedSubtext() {
   const phrases = [
-    "fresh beginnings",
-    "limitless potential",
-    "stronger futures",
-    "second chances",
+    "Fresh beginnings",
+    "Limitless potential",
+    "Stronger futures",
+    "Second chances",
   ];
 
   const [text, setText] = useState("");
@@ -53,7 +53,7 @@ export default function AnimatedSubtext() {
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.2 }}
-        className="text-white font-semibold text-[27px]"
+        className="text-white font-medium text-[27px]"
       >
         {text}
         <motion.span
