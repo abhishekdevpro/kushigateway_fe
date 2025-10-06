@@ -85,7 +85,7 @@ export default function HomeFive() {
                         />
                             <div className="mr-3">
                                 <h3 className="font-semibold text-2xl font-sans">{card.title}</h3>
-                                <p className="text-[14px] md:text-[12px]">{card.description}</p>
+                                <p className="text-[14px] md:text-[15px]">{card.description}</p>
                             </div>
                         </div>
                         <div className="flex items-center">

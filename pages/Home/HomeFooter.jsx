@@ -101,7 +101,7 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400 text-sm">
             <li><a href="mailto: info@kushigateway.com">info@kushigateway.com</a></li>
             <li>
-                <button className="cursor-pointer bg-[#14899A] hover:[#0E6370] text-white px-4 py-2 rounded transition-all duration-300 text-sm font-bold">
+                <button className="cursor-pointer text-white px-4 py-2 rounded text-sm font-bold">
                   <a href="https://calendly.com/hypervsolutions/" target="_blank" rel="noreferer">Book Free Consultation</a>                  
                 </button>
             </li>            

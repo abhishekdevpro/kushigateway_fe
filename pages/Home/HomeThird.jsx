@@ -32,7 +32,7 @@ const hoverEffect = "transition-all duration-300 transform hover:scale-105";
 
 export default function HomeThird() {
   return (
-    <section className="w-full bg-[#F4A26126] px-4 md:px-8 py-4 py-16">
+    <section className="w-full bg-[#FDF1E7] px-4 md:px-8 py-4 py-16">
       {/* Top Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-start md:flex md:justify-between">
         {/* Left Content */}
