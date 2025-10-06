@@ -29,11 +29,11 @@ export default function HeroSection() {
         <div className="flex flex-col h-[330px] w-[156px]">
               <div style={{backgroundImage: `url(${banner1.src})`, backgroundSize: 'contain', backgroundRepeat: "no-repeat"}} 
               className={`text-white w-[150px] h-[230px] flex flex-col ${hoverEffect}`}>
-                  <p className="font-bold font-serif text-[18px] p-3 pb-0 mt-3">95% Success Stories</p>
-                  <p className="text-[9px] pl-4 p-2">Our programs have successfully reintegrated individuals into society by providing education, 
+                  <p className="font-bold font-serif text-[18px] p-3 pb-0 mt-1">95% Success Stories</p>
+                  <p className="text-[10px] pl-4 p-1">Our programs have successfully reintegrated individuals into society by providing education, 
                 housing, and meaningful employment.</p>
                   <Link href="https://ultraaura.education/about-us" target="_blank" rel="noreferer"
-                      className={`text-center text-black bg-white w-30 h-10 p-2 ml-3 
+                      className={`text-center text-black bg-white w-28 h-8 p-2 ml-3 mt-1
                       rounded-full flex justify-around items-center text-[10px] ${hoverEffectBtn}`}
                   >Learn More
                       <Image src={Frame24} className="w-fit" alt="arrow-icon"/>
@@ -47,7 +47,7 @@ export default function HeroSection() {
                         style={{backgroundImage: `url(${banner2.src})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}
                     >
                         <p className="font-bold text-[15px] pl-1">Skill Training & Education</p>
-                <p className="text-[9px] p-1">From digital skills to job readiness, we prepare individuals and families with the 
+                <p className="text-[11px] p-1">From digital skills to job readiness, we prepare individuals and families with the 
                 knowledge to thrive.</p>
                 <Link href="https://ultraaura.education/course-list" target="_blank" rel="noreferer"
                     className={`text-center text-black bg-white w-35 h-10 p-2 
@@ -59,10 +59,10 @@ export default function HeroSection() {
         </div>
         <div className="grid grid-cols-2 place-items-center justify-items-center">
           <div className="flex flex-col">
-            <div className={`bg-[#1D3557] rounded-4xl w-[155px] h-42 flex flex-col justify-around items-center mb-4 ${hoverEffect}`}>
+            <div className={`bg-[#1D3557] rounded-4xl w-[155px] h-46 flex flex-col justify-around items-center mb-4 ${hoverEffect}`}>
             <div className="mx-5 flex flex-col items-start">
-                <p className="text-[#2E2E2E] text-center font-bold text-[16px] font-serif mt-2 text-white">Join 1000+ <br/>Supporters</p>
-                <p className="text-[9px] mt-1">Every contribution fuels education, skill-building, and care for those in need. Together, we transform lives.</p>
+                <p className="text-[#2E2E2E] text-center font-bold text-[14px] font-serif mt-2 text-white">Join 1000+ <br/>Supporters</p>
+                <p className="text-[10px] mt-1">Every contribution fuels education, skill-building, and care for those in need. Together, we transform lives.</p>
             </div>
             <Link href="https://calendly.com/hypervsolutions/15-minute-meeting" target="_blank" rel="noreferer" 
             className={`flex justify-around items-center text-gray-100 bg-[#B4B4B4] py-1 mb-1 rounded-full w-34 h-9 ${hoverEffectBtn}`}>
@@ -73,8 +73,8 @@ export default function HeroSection() {
             <div className={`font-bold h-[260px] w-[156px] flex flex-col justify-end items-start text-[12px] p-2 pb-10 font-serif mb-4 ${hoverEffect}`}
                         style={{backgroundImage: `url(${banner3.src})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}
                     >
-                        <p className="font-bold text-[15px] pl-1 tracking-[-1px]">Support & Care</p>
-                <p className="text-[9px] p-1">From digital skills to job readiness, we prepare individuals and families with the 
+                        <p className="font-bold text-[17px] pl-1 tracking-[-1px]">Support & Care</p>
+                <p className="text-[11px] p-1">From digital skills to job readiness, we prepare individuals and families with the 
                 knowledge to thrive.</p>
                 <Link href="https://calendly.com/hypervsolutions/15-minute-meeting" target="_blank" rel="noreferer"
                     className={`text-center text-black bg-white w-35 h-10 p-2 
@@ -89,11 +89,11 @@ export default function HeroSection() {
             className={`text-white h-[230px] w-[147px] flex flex-col justify-around ${hoverEffect}`}>
                 <div>
                 <p className="font-bold font-serif text-[18px] p-3 pb-0 mt-3">Gallery of Change</p>
-                <p className="text-[9px] pl-4 p-2">See the moments that inspire us- stories of resilience, growth, and transformation</p>
+                <p className="text-[11px] pl-4 p-2 pb-0">See the moments that inspire us- stories of resilience, growth, and transformation</p>
                 </div>
                 <Link href="#" target="_blank" rel="noreferer"
                     className={`text-center text-black bg-white w-30 h-10 p-2 ml-3 
-                    rounded-full flex justify-around items-center text-[10px] mt-3 ${hoverEffectBtn}`}
+                    rounded-full flex justify-around items-center text-[10px] mb-1 ${hoverEffectBtn}`}
                 >View Stories
                     <Image src={Frame25} className="w-fit rounded-full border-1 border-black" alt="arrow-icon"/>
                 </Link>

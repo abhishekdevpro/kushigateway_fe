@@ -150,7 +150,7 @@ export default function HomeFourth() {
             alt="Prev"
             width={60}
             height={60}
-            className="md:w-fit"
+            className="md:w-fit opacity-50"
           />
         </div>
 
@@ -164,7 +164,7 @@ export default function HomeFourth() {
             alt="Next"
             width={60}
             height={60}
-            className="md:w-fit"
+            className="md:w-fit opacity-50"
           />
         </div>
                 </Swiper>

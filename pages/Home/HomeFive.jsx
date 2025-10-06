@@ -73,7 +73,7 @@ export default function HomeFive() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:w-[1170px] text-white my-12 place-items-center">
                 {cards.map((card) => (
                     <div
-                        className={`flex rounded-2xl p-6 md:px-8 md:w-[570px] h-[150px] ${card.color} ${hoverEffect}`}
+                        className={`flex rounded-2xl p-6 md:px-8 md:w-[570px] h-[180px] md:h-[150px] ${card.color} ${hoverEffect}`}
                     >
                         <div className="flex items-start gap-3">
                             <Image
@@ -85,7 +85,7 @@ export default function HomeFive() {
                         />
                             <div className="mr-3">
                                 <h3 className="font-semibold text-2xl font-sans">{card.title}</h3>
-                                <p className="text-[12px]">{card.description}</p>
+                                <p className="text-[14px] md:text-[12px]">{card.description}</p>
                             </div>
                         </div>
                         <div className="flex items-center">
