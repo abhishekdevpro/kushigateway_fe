@@ -11,6 +11,7 @@ import banner3 from "../../public/Assets/Banner_img3.png";
 import banner4 from "../../public/Assets/Banner_img4.png";
 import centerArrowIcon from "../../public/Assets/center-arrow-icon.png";
 import rightArrowIcon from "../../public/Assets/right-arrow-icon.png";
+import AnimatedSubtext from "./AnimatedSubtext";
 import Link from "next/link";
 
 const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2";
@@ -24,7 +25,7 @@ const HomeFirst = () => {
       <h1 className="text-2xl md:text-[68px] font-semibold text-white text-center mt-12 mb-2">
         Transforming Lives with Second <br/> Chances
       </h1>
-      <p className="text-center md:text-[27px] mb-8 md:mb-0 w-fit">At Kushi Gateway, we believe in fresh beginnings and <br/>limitless potential. </p>
+      <p className="text-center md:text-[27px] mb-8 md:mb-0 w-fit">At Kushi Gateway, we believe in fresh beginnings and <br/><AnimatedSubtext/></p>
       </div>
       {/* Content grid layout with responsive columns */}
       <div className="flex justify-between items-end gap-4">

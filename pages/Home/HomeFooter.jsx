@@ -54,8 +54,8 @@ export default function Footer() {
         <div className="hidden md:block">
           <h3 className="text-lg font-semibold mb-4">Address</h3>
           <p className="text-gray-400 text-sm leading-relaxed">
-            1509 Lady St, <br />
-            Columbia SC, 29201, <br />
+            P O Box 1084, <br />
+            Columbia, SC 29202, <br />
             United States.
           </p>
         </div>
