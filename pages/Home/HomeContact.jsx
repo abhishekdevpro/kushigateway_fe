@@ -4,6 +4,7 @@ import Image from "next/image";
 import doorImage from "../../public/Assets/contact_sec_img.png"; // <-- replace with your image
 import line from "../../public/Assets/line.png";
 
+const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2 active:-translate-y-2";
 export default function ContactSection() {
   return (
     <section className="w-full bg-[#F4F4F4] py-16 px-4 md:px-8">
@@ -75,7 +76,7 @@ export default function ContactSection() {
         {/* Right Side Image */}
         <div className="flex justify-center">
           {/* Replace with your image */}
-          <div className="w-full max-w-3xl rounded-md overflow-hidden shadow-lg">
+          <div className={`w-full max-w-3xl rounded-md overflow-hidden shadow-lg ${hoverEffect}`}>
             <Image
               src={doorImage} // <-- replace with your own image path
               alt="Open Door"

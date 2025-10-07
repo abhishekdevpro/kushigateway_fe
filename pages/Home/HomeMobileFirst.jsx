@@ -12,8 +12,9 @@ import banner4 from "../../public/Assets/Banner_img4.png";
 import centerArrowIcon from "../../public/Assets/center-arrow-icon.png";
 import rightArrowIcon from "../../public/Assets/right-arrow-icon.png";
 import Link from "next/link";
+import AnimatedSubtext from "./AnimatedSubtext";
 
-const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2";
+const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2 active:-translate-y-2";
 const hoverEffectBtn = "transition-all duration-300 transform hover:scale-105";
 export default function HeroSection() {
   return (
@@ -22,7 +23,7 @@ export default function HeroSection() {
       <h1 className="text-2xl md:text-5xl font-semibold text-white text-center mt-6">
         Transforming Lives with Second Chances
       </h1>
-      <p className="text-center mt-4">At Kushi Gateway, we believe in fresh beginnings and limitless potential. </p>
+      <p className="text-center mt-4">At Kushi Gateway, we believe in <AnimatedSubtext/></p>
       </div>
       <div className="grid grid-cols-1">
       <div className="grid grid-cols-2 place-items-end justify-items-center">
