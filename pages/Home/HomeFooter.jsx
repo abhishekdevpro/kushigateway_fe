@@ -6,6 +6,8 @@ import companyStrip from "../../public/Assets/Kushi_logo.png"; // <-- replace wi
 import sbeDbeBadge from "../../public/Assets/footer_img.png";       // <-- replace with SBE+DBE badge
 import cloudPattern from "../../public/Assets/footerRectangle.png"; // <-- replace with footer wave/cloud
 
+const hoverEffect = "transition-all duration-300 transform hover:-translate-y-1 active:-translate-y-1";
+
 export default function Footer() {
   return (
     <footer className="bg-[#0A2647] text-white relative">
@@ -42,11 +44,11 @@ export default function Footer() {
         <div className="hidden md:block">
           <h3 className="text-lg font-semibold mb-4">Quick links</h3>
           <ul className="space-y-2 text-gray-400">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">What We Do</a></li>
-            <li><a href="#">Join With Us</a></li>
-            <li><a href="#">Teams</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" className="transition duration-300 hover:border-b-2 hover:text-white">About Us</a></li>
+            <li><a href="#" className="transition duration-300 hover:border-b-2 hover:text-white">What We Do</a></li>
+            <li><a href="#" className="transition duration-300 hover:border-b-2 hover:text-white">Join With Us</a></li>
+            <li><a href="#" className="transition duration-300 hover:border-b-2 hover:text-white">Teams</a></li>
+            <li><a href="#" className="transition duration-300 hover:border-b-2 hover:text-white">Contact Us</a></li>
           </ul>
         </div>
 
@@ -66,7 +68,7 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400 text-sm">
             <li><a href="mailto: info@kushigateway.com">info@kushigateway.com</a></li>
             <li>
-                <button className="cursor-pointer bg-[#14899A] hover:[#0E6370] text-white px-4 py-2 rounded transition-all duration-300 text-sm font-bold">
+                <button className={`cursor-pointer bg-[#14899A] hover:[#0E6370] text-white px-4 py-2 rounded text-sm font-bold ${hoverEffect}`}>
                   <a href="https://calendly.com/hypervsolutions/" target="_blank" rel="noreferer">Book Free Consultation</a>                  
                 </button>
             </li>            
@@ -101,7 +103,7 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400 text-sm">
             <li><a href="mailto: info@kushigateway.com">info@kushigateway.com</a></li>
             <li>
-                <button className="cursor-pointer text-white px-4 py-2 rounded text-sm font-bold">
+                <button className={`cursor-pointer text-white px-4 py-2 rounded text-sm font-bold ${hoverEffect}`}>
                   <a href="https://calendly.com/hypervsolutions/" target="_blank" rel="noreferer">Book Free Consultation</a>                  
                 </button>
             </li>            

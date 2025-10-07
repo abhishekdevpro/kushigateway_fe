@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useRef } from "react";
 
+const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2 active:-translate-y-2";
 const cards = [
     {
       id: 1,
@@ -111,7 +112,7 @@ export default function HomeFourth() {
                 {cards.map((card) => (
                     <SwiperSlide key={card.id}>
                     <div
-                        className={`flex flex-col justify-around text-white font-sans gap-1 md:gap-2 rounded-2xl border-shadow p-4 h-[200px] md:h-[300px]`}
+                        className={`flex flex-col justify-around text-white font-sans gap-1 md:gap-2 rounded-2xl border-shadow p-4 h-[200px] md:h-[300px] ${hoverEffect}`}
                         style={{ backgroundColor: card.color }}
                     >
                         {/* Icon */}

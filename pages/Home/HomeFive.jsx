@@ -54,7 +54,7 @@ const cards = [
     }
   ];
 
-  const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2";
+  const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2 active:-translate-y-2";
 
 export default function HomeFive() {
   return (

@@ -9,6 +9,8 @@ import line from "../../public/Assets/line.png";
 import ionBtn from "../../public/Assets/ion_arrow-redo-sharp.png";
 import texture1 from "../../public/Assets/texture1.png";
 
+const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2 active:-translate-y-2";
+
 export default function ServicePathways() {
   return (
     <section className="w-full py-12 bg-white">
@@ -30,7 +32,7 @@ export default function ServicePathways() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:max-w-[1340px] mx-auto px-6">
         
         {/* Card 1 */}
-        <div className="bg-[#F4A26126] rounded-2xl shadow-md relative flex justify-between">
+        <div className={`bg-[#F4A26126] rounded-2xl shadow-md relative flex justify-between ${hoverEffect}`}>
           <div className="p-6">
           <h3 className="text-[23px] font-bold text-gray-900">
             Jobs & Careers
@@ -70,7 +72,7 @@ export default function ServicePathways() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-[#14899A26] rounded-2xl shadow-md relative flex justify-between">
+        <div className={`bg-[#14899A26] rounded-2xl shadow-md relative flex justify-between ${hoverEffect}`}>
           <div className="p-6">
           <h3 className="text-[23px] font-bold text-gray-900">
             Skills & Education
@@ -110,7 +112,7 @@ export default function ServicePathways() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-[#8138E726] rounded-2xl shadow-md relative flex justify-between">
+        <div className={`bg-[#8138E726] rounded-2xl shadow-md relative flex justify-between ${hoverEffect}`}>
           <div className="p-6">
           <h3 className="text-[23px] font-bold text-gray-900">
             Homecare Support

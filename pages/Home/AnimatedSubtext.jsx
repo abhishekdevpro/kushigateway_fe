@@ -53,7 +53,7 @@ export default function AnimatedSubtext() {
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.2 }}
-        className="text-white font-medium text-[27px]"
+        className="text-white font-medium text-[16px] md:text-[27px]"
       >
         {text}
         <motion.span

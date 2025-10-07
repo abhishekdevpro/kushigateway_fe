@@ -6,6 +6,8 @@ import texture2 from "../../public/Assets/getInvlovedTexture2.png";
 import texture3 from "../../public/Assets/getInvlovedTexture3.png";
 import line from "../../public/Assets/line.png";
 
+const hoverEffect = "transition-all duration-300 transform hover:-translate-y-2 active:-translate-y-2";
+
 export default function GetInvolved() {
   return (
     <section className="w-full py-12 bg-[#FDF1E7]">
@@ -28,7 +30,7 @@ export default function GetInvolved() {
         
         {/* Card 1 */}
         <div style={{backgroundImage: `url(${texture1.src})`, backgroundSize: 'fit', backgroundRepeat: 'no-repeat'}}
-        className="text-center rounded-2xl shadow-sm p-4 pr-0 relative flex items-center justify-center">
+        className={`text-center rounded-2xl shadow-sm p-4 pr-0 relative flex items-center justify-center ${hoverEffect}`}>
           <h3 className="text-[20px] w-54 h-10 md:h-18 md:text-[30px] font-bold">
             Volunteer with us
           </h3>        
@@ -36,7 +38,7 @@ export default function GetInvolved() {
 
         {/* Card 2 */}
         <div style={{backgroundImage: `url(${texture2.src})`, backgroundSize: 'fit', backgroundRepeat: 'no-repeat'}}
-        className="text-center rounded-2xl shadow-sm p-4 pr-0 relative flex items-center justify-center">
+        className={`text-center rounded-2xl shadow-sm p-4 pr-0 relative flex items-center justify-center ${hoverEffect}`}>
           <h3 className="text-[20px] w-60 h-10 md:h-18 md:text-[30px] font-bold mb-4 md:mb-0">
             Partner with us (corporates, NGOs)
           </h3>        
@@ -44,7 +46,7 @@ export default function GetInvolved() {
 
         {/* Card 3 */}
         <div style={{backgroundImage: `url(${texture3.src})`, backgroundSize: 'fit', backgroundRepeat: 'no-repeat'}}
-        className="text-center rounded-2xl shadow-sm p-4 pr-0 relative flex items-center justify-center">
+        className={`text-center rounded-2xl shadow-sm p-4 pr-0 relative flex items-center justify-center ${hoverEffect}`}>
           <h3 className="text-[20px] w-54 h-10 md:h-18 md:text-[30px] font-bold mt-3 md:mt-0">
             Donate
           </h3>        

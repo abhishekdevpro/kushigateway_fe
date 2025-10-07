@@ -73,9 +73,9 @@ export default function Navbar() {
         <div className="md:hidden bg-gray-50 px-4 py-3 space-y-3 shadow-inner">
           <nav className="flex flex-col items-center gap-4 text-sm font-medium">
             <a href="#" className="text-[#8138E7]">Home</a>
-            <a href="#" className="hover:text-[#8138E7]">About Us</a>
-            <a href="#" className="hover:text-[#8138E7]">Partnership & Programmes</a>
-            <a href="#" className="hover:text-[#8138E7]">What We Do</a>
+            <a href="#" className="active:text-[#8138E7]">About Us</a>
+            <a href="#" className="active:text-[#8138E7]">Partnership & Programmes</a>
+            <a href="#" className="active:text-[#8138E7]">What We Do</a>
           </nav>
           <button className="bg-[#8138E7] text-white px-4 py-2 rounded-full w-full">
             Contact Us →
